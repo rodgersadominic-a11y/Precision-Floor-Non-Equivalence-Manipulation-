@@ -1,0 +1,21 @@
+```text
+PFNE SEED — PROOF OF EXISTENCE
+
+Date: 2026-05-19
+Author: [Dominic (Nicole) Rodgers]
+
+SUMMARY:
+
+The term-count ratio R(a,b,ε) = N(ab,ε) / (N(a,ε) + N(b,ε)) is stable across nine orders of magnitude of ε (10⁻² to 10⁻¹⁰). The ratio depends only on a and b, not on ε.
+
+For fixed a=2, b=3 and varying c (5 to 50,000), define A(c) = N(abc)/(N(a)+N(b)+N(c)). A(c) approaches a ceiling A_max ≈ 5.837. Setting β = A/A_max and γ = 1/√(1−β²), the Lorentz identity 1/γ² = 1−β² holds with R² = 1.0000000000 and residuals at the floating-point floor (RMSE = 3.13×10⁻¹⁷).
+
+The arctanh-form Taylor series for the natural logarithm, when evaluated at finite precision, produces structured term-count asymmetries that are precision-invariant and follow the Lorentz transform. This is a reproducible mathematical result requiring no physical assumptions.
+
+FULL DOCUMENTATION:
+
+https://github.com/rodgersadominic-a11y/Precision-Floor-Non-Equivalence-Manipulation-
+
+STATUS:
+
+This seed establishes priority of discovery. Full paper in process.
