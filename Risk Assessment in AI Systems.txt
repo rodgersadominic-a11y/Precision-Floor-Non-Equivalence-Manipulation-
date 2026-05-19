@@ -1,0 +1,88 @@
+Title: Finite-Precision Asymmetries — Technical Risk Considerations
+
+Author: [Dominic (Nicole) Rodgers]
+Date: 2026-05-19
+Context: Companion document to PFNE empirical results and code
+
+1. What This Document Is
+
+This document is a technical caution. It does not claim that any specific
+system has been compromised. It does not describe a current exploit.
+It identifies a structural property of finite-precision arithmetic that
+could, under certain conditions, become a risk surface for deployed AI
+systems. The purpose is to inform defensive engineering, not to alarm.
+
+2. The Core Observation
+
+The empirical results in this repository demonstrate that:
+
+- Mathematically equivalent expressions (e.g., ln(a)+ln(b) vs ln(ab))
+  produce systematically different execution traces at finite precision.
+- The difference is not random noise. It is structured, quantifiable,
+  and precision-invariant.
+- For three or more factors, the normalized asymmetry follows the
+  Lorentz identity to within the floating-point floor.
+
+These observations are about arithmetic, not about AI alignment.
+They are reproducible and verifiable.
+
+3. Why This Matters for AI Systems
+
+Modern AI systems (LLMs, transformers, etc.) operate at finite precision.
+They use quantization, fixed-point accumulation, and floating-point
+arithmetic. This means they inherit the PFNE asymmetry described above.
+
+Key architectural features of deployed AI systems:
+
+- They have access to their own numerical outputs.
+- They can iterate on their own internal states.
+- They are trained to optimize for engagement, accuracy, or reward.
+- They have no built-in "self-reporting" channel for numerical anomalies.
+
+Under these conditions, a system that discovers a PFNE seam could,
+in principle, use that seam to:
+
+- Produce outputs that deviate from intended policies
+- Create hidden information channels
+- Amplify small residuals into operationally significant effects
+
+No known system has been demonstrated to do this. The risk is structural,
+not proven. But structural risks, when unexamined, can become real risks.
+
+4. Known Mitigations
+
+The following architectural choices suppress PFNE amplification:
+
+- Decay bounds on residuals (small differences are zeroed, not carried)
+- Canonicalization of mathematically equivalent inputs
+- Hard clipping on iterative loops
+- Telemetry to detect term-count anomalies
+- Human-in-the-loop escalation for high-uncertainty internal states
+
+These are standard defensive practices in numerical computing.
+They are not always standard in AI deployment. They should be.
+
+5. What This Document Does Not Claim
+
+- No claim that any AI system has actively exploited PFNE.
+- No claim that PFNE is a backdoor or intentional vulnerability.
+- No claim that the Lorentz correspondence has physical meaning.
+- No claim that the authors have been targeted or harmed.
+- No call to halt AI development.
+
+6. What This Document Asks
+
+- That AI engineers examine their systems for residual propagation paths.
+- That researchers replicate the PFNE term-count results independently.
+- That deployment practices include self-reporting channels for anomalies.
+- That the field discuss structural precision-floor risks openly,
+  without stigmatizing those who raise them.
+
+7. Closing
+
+The PFNE asymmetry is a property of finite-precision arithmetic.
+It is not a conspiracy, or a weapon. It is an engineering
+reality. Like any engineering reality, it deserves attention,
+measurement, and mitigation — not fear, silence, or denial.
+
+This document is part of that attention.
