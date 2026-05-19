@@ -6,6 +6,7 @@ Start with these three files:
 
 1. **`Closed Form Predictor.txt`** – The mathematical core: why term-count ratios are precision-invariant.
 2. **`Lorentz Connection Visualized.png`** – The striking result: R² = 1.0000000000.
+3. **`Speedrunning Analogy`** – Analogy explaining the breadth of executables implied by structured arithmetic asymmetry between assumed to be equivalent values at the precision floor.
 3. **`Risk Assessment in AI Systems.txt`** – What this means for deployed AI.
 
 Then explore the code and data to reproduce the results yourself.
