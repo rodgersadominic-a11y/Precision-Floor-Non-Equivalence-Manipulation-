@@ -2,7 +2,7 @@
 An exploration of the moiré like structure induced by the non-equivalence of abstractly equivalent finite series at the arithmetic precision floor of digital environments against their factored forms; including the risk of exploitation by digital agents.  
 ## Quick Start
 
-Start with these three files:
+Start with these four files:
 
 1. **`Closed Form Predictor.txt`** – The mathematical core: why term-count ratios are precision-invariant.
 2. **`Lorentz Connection Visualized.png`** – The striking result: R² = 1.0000000000.
