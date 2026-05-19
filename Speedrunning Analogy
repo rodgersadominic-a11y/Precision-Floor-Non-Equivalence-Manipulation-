@@ -1,0 +1,5 @@
+## What Is an Implied Catalog of Executables?
+
+The video game *Super Mario 64* ships with an intended catalog of moves: jump, run, grab, crouch. But players have discovered an implied catalog — wall clips, sequence breaks, speedrun techniques — by straining the game's arithmetic at its precision floor.
+
+These exploits were not intended. They emerged from finite-precision asymmetries. The same structure exists in any digital system, including AI. This repository documents that structure and its risks.
