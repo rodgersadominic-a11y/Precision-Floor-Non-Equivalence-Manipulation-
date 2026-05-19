@@ -10,3 +10,5 @@ Start with these four files:
 3. **`Risk Assessment in AI Systems.txt`** – What this means for deployed AI.
 
 Then explore the code and data to reproduce the results yourself.
+
+Note: The Desmos and Python png files are not evidence. They are only included to help build intuition about the complexity of PFNE failure modes.
