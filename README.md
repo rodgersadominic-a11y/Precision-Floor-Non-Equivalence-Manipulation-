@@ -4,11 +4,16 @@ An exploration of the moiré-like structure induced by the non-equivalence of ab
 
 ## Quick Start
 
-Start with these three files:
+Start with these six files, in this order:
 
-1. **`Closed Form Predictor.txt`** – The mathematical core: why term-count ratios are precision-invariant.
-2. **`Lorentz Connection Visualized.png`** – The striking result: \( R^2 = 1.0000000000 \).
-3. **`Risk Assessment in AI Systems.txt`** – What this means for deployed AI.
+1. **`ABSTRACT.md`** – High-level overview of PFNE and its implications.
+2. **`termcount_ratio_invariance_results.md`** – The core empirical finding: term-count ratios are stable across nine orders of precision.
+3. **`Closed Form Predictor.txt`** – The mathematical derivation: why the ratio depends only on a and b.
+4. **`nilpotent_recursion_lorentz.md`** – The theoretical scaffolding: nilpotent recursion, moiré geometry, and why the Lorentz identity appears.
+5. **`Desmos assumed equivalence failure mode.jpeg`** – The speedrunning analogy: how finite-precision asymmetries create an implied catalog of unintended behaviors.
+6. **`Risk Assessment in AI Systems.txt`** – What this means for deployed AI: cautious, non-terrifying, and actionable.
+
+Then explore the code and data to reproduce the results yourself.
 
 ## File Index
 
