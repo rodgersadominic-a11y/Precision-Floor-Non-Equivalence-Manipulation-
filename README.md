@@ -10,7 +10,7 @@ Start with these six files, in this order:
 2. **`termcount_ratio_invariance_results.md`** – The core empirical finding: term-count ratios are stable across nine orders of precision.
 3. **`Closed Form Predictor.txt`** – The mathematical derivation: why the ratio depends only on a and b.
 4. **`nilpotent_recursion_lorentz.md`** – The theoretical scaffolding: nilpotent recursion, moiré geometry, and why the Lorentz identity appears.
-5. **`Desmos assumed equivalence failure mode.jpeg`** – The speedrunning analogy: how finite-precision asymmetries create an implied catalog of unintended behaviors.
+5. **`Speedrunning Analogy.txt`** – The Mario 64 analogy: how finite-precision asymmetries create an implied catalog of unintended behaviors.
 6. **`Risk Assessment in AI Systems.txt`** – What this means for deployed AI: cautious, non-terrifying, and actionable.
 
 Then explore the code and data to reproduce the results yourself.
@@ -28,10 +28,11 @@ Then explore the code and data to reproduce the results yourself.
 | `Python Non-Equivalence Visualization.png` | Early Python visual intuition |
 | `Python Residual Feedback Visualization.png` | Residual propagation intuition |
 | `Risk Assessment in AI Systems.txt` | Cautious risk discussion |
+| `Speedrunning Analogy.txt` | Mario 64 analogy for the implied catalog |
 | `Table of precision invariance results against predictor.png` | Validation for 33 argument pairs |
 | `license.txt` | CC BY-NC 4.0 |
 | `lorentz_connection_program.py` | Lorentz test code |
-| `nilpotent_recursion_lorentz.md` | Theoretical scaffolding: nilpotent recursion, moiré geometry, why Lorentz emerges |
+| `nilpotent_recursion_lorentz.md` | Theoretical scaffolding |
 | `requirements.txt` | Dependencies |
 | `seed.txt` | Timestamped proof of existence |
 | `termcount_ratio_invariance_results.md` | Raw term-count data (7,19,31) |
